@@ -205,8 +205,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="glass-card" style={{ padding: '0', overflow: 'hidden' }}>
-          <div style={{ padding: '2rem', borderBottom: '1px solid var(--border-color)', background: '#fcfcfc', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div className="glass-card mt5-report-summary" style={{ padding: '0', overflow: 'hidden' }}>
+          <div className="mt5-report-header" style={{ padding: '2rem', borderBottom: '1px solid var(--border-color)', background: '#fcfcfc', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <span style={{ fontWeight: '700', color: 'var(--foreground)' }}>MT5 감사 리포트 요약</span>
             <span className="badge-gold">실계좌</span>
           </div>
