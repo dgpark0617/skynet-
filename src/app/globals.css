@@ -387,8 +387,34 @@ footer p {
   }
   
   .performance-highlight p {
+    font-size: 0.9rem !important;
+    line-height: 1.7 !important;
+  }
+  
+  .performance-highlight p strong {
     font-size: 1rem !important;
-    line-height: 1.8 !important;
+  }
+  
+  .performance-highlight > div {
+    font-size: 0.85rem !important;
+  }
+  
+  /* 성과 지표 숫자 모바일 조정 (절반 크기) */
+  .stat-value {
+    font-size: 1.25rem !important;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem !important;
+  }
+  
+  /* 성과 지표 박스 패딩 모바일 조정 */
+  .glass-card > div[style*="padding: '3rem'"] {
+    padding: 2rem 1rem !important;
+  }
+  
+  .glass-card > div[style*="padding: '3rem'"] > div[style*="padding: '1.5rem 2rem'"] {
+    padding: 1rem 1.5rem !important;
   }
   
   /* CTA 섹션 모바일 패딩 조정 */
