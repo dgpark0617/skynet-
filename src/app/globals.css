@@ -369,4 +369,47 @@ footer p {
   .stat-label {
     font-size: 0.95rem;
   }
+  
+  /* 모바일에서 박스 패딩 줄이기 */
+  .glass-card {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  /* WHY 섹션 박스들 모바일 패딩 조정 */
+  section[id="why"] .glass-card {
+    padding: 2rem 1.5rem !important;
+  }
+  
+  /* WHAT 섹션 performance-highlight 모바일 조정 */
+  .performance-highlight {
+    padding: 1.5rem !important;
+    margin: 0 1rem 2rem 1rem !important;
+  }
+  
+  .performance-highlight p {
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+  }
+  
+  /* CTA 섹션 모바일 패딩 조정 */
+  section:has(.glass-card[style*="padding: '5rem'"]) .glass-card,
+  section:has(.glass-card[style*="padding: 5rem"]) .glass-card {
+    padding: 3rem 2rem !important;
+  }
+  
+  /* Custom Program 섹션 모바일 패딩 조정 */
+  section:last-of-type .glass-card {
+    padding: 3rem 2rem !important;
+  }
+  
+  /* 제목 크기 모바일 조정 */
+  h2 {
+    font-size: 2rem !important;
+  }
+  
+  /* WHY 섹션 제목 모바일 조정 */
+  section[id="why"] .glass-card > div[style*="fontSize: '2.5rem'"] {
+    font-size: 1.8rem !important;
+    margin-bottom: 1.5rem !important;
+  }
 }

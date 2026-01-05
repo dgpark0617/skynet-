@@ -239,7 +239,7 @@ export default function Home() {
           </div>
 
           <div className="performance-highlight" style={{ margin: '0 3rem 3rem 3rem', textAlign: 'left' }}>
-            <p className="long-text" style={{ fontSize: '1rem', color: 'var(--foreground)', lineHeight: '1.6', marginBottom: '2rem' }}>
+            <p className="long-text" style={{ fontSize: '1rem', color: 'var(--foreground)', lineHeight: '1.8', marginBottom: '2rem' }}>
               <strong style={{ display: 'block', marginBottom: '0.5rem', fontSize: '1.1rem' }}>"단 하나의 자산에 집중하여, 시장을 이기는 법칙을 증명했습니다."</strong>
               {bybitStats?.tradingDays ? `${bybitStats.tradingDays}일 이상` : '260일 이상'}의 실거래, <strong>54.88%</strong>의 누적 수익률.
               <br/>
