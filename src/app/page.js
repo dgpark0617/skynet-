@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 
 export default function Home() {
-  const REFERRAL_CODE = "파트너 문의"; // 준비 중
+  const REFERRAL_CODE = "152471";
+  const REFERRAL_LINK = "https://partner.bybit.com/b/152471";
   const COPY_TRADING_LINK = "https://www.bybit.com/copyMt5/trade-center/detail?providerMark=xkc2wsLqVomphpP%2FtV6RRQ%3D%3D";
   
   const [bybitStats, setBybitStats] = useState(null);
@@ -295,10 +296,29 @@ export default function Home() {
               성공적인 투자를 위한 파트너십을 제안합니다. 개인 및 기관 투자자를 위한 맞춤형 솔루션을 논의해 보세요.
             </p>
 
-            <div style={{ display: 'inline-block', background: 'rgba(255,255,255,0.12)', padding: '1.25rem 3rem', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.2)', marginBottom: '3rem', backdropFilter: 'blur(8px)' }}>
+            <a 
+              href={REFERRAL_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ 
+                display: 'inline-flex', 
+                alignItems: 'center',
+                background: 'rgba(255,255,255,0.12)', 
+                padding: '1.25rem 3rem', 
+                borderRadius: '8px', 
+                border: '1px solid rgba(255,255,255,0.2)', 
+                marginBottom: '3rem', 
+                backdropFilter: 'blur(8px)',
+                textDecoration: 'none',
+                color: 'inherit',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
+            >
               <span style={{ opacity: '0.9', marginRight: '1rem', fontSize: '0.95rem', fontWeight: '500' }}>파트너 코드:</span>
               <span style={{ fontSize: '1.5rem', fontWeight: '700', letterSpacing: '0.05em' }}>{REFERRAL_CODE}</span>
-            </div>
+              <span style={{ marginLeft: '0.75rem', opacity: '0.7', fontSize: '0.85rem' }}>→ 가입하기</span>
+            </a>
 
             <br />
             <a href={COPY_TRADING_LINK} className="btn-primary" style={{ background: 'white', color: 'var(--accent-primary)', fontSize: '1.1rem', padding: '1.25rem 3rem' }}>
